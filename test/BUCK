@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'basic-test',
+  srcs = [
+    'basic_test.cc',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:benchmark',
+  ],
+)

@@ -44,3 +44,10 @@ rules.ninja
 # out-of-source build top-level folders.
 build/
 _build/
+
+# Buck
+/buck-out/
+/.buckd/
+/buckaroo/
+.buckconfig.local
+BUCKAROO_DEPS
