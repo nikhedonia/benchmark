@@ -26,6 +26,9 @@ cxx_library(
     ('^macos.*', macos_flags),
     ('^linux.*', linux_flags),
   ],
+  exported_platform_linker_flags = [
+    ('^linux.*', ['-lpthread'])
+  ], 
   visibility = [
     'PUBLIC',
   ],
